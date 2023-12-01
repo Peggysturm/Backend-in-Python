@@ -1,0 +1,12 @@
+version: '3'
+services:
+  web:
+    container_name: pars_app
+    build: .
+    restart: on-failure
+    ports:
+      - "8000:8000"
+  
+  ubuntu:
+    container_name: ubuntu_container
+    image: "ubuntu"
